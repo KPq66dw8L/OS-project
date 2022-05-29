@@ -1,3 +1,5 @@
+This is a little & basic OS kernel. 
+
 To enter the build env:
 
 Linux or MacOS: docker run --rm -it -v "$(pwd)":/root/env myos-buildenv
