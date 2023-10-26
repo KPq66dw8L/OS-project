@@ -1,15 +1,3 @@
-This is a little & basic OS kernel. 
-
-To enter the build env:
-
-Linux or MacOS: `docker run --rm -it -v "$(pwd)":/root/env myos-buildenv`
-Windows (CMD): `docker run --rm -it -v "%cd%":/root/env myos-buildenv`
-Windows (PowerShell): `docker run --rm -it -v "${pwd}:/root/env" myos-buildenv`
-
-Launch emulation with Qemu:
-```
-C:\"Program Files"\qemu\qemu-system-x86_64.exe -cdrom dist/x86_64/kernel.iso
-```
 # Petit Noyau de Système d'Exploitation (OS)
 Ce projet est un petit noyau de système d'exploitation, principalement conçu pour l'architecture x86_64. Il vise à fournir une base simple pour comprendre le fonctionnement interne des systèmes d'exploitation. Le noyau est divisé en interfaces (intf) et implémentations (impl), mettant l'accent sur la clarté et la modularité.
 
