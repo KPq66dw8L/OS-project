@@ -71,3 +71,24 @@ Le répertoire targets contient un seul sous-répertoire :
 `src/impl`: Contient l'implémentation du noyau, y compris les détails spécifiques à l'architecture x86_64.
 `src/intf`: Définit les interfaces, comme print.h pour l'affichage ou la journalisation.
 `targets/x86_64`: Inclut les scripts et configurations pour la construction et le lien de l'ISO du noyau pour x86_64.
+
+
+## Explications
+
+Un "kernel" (ou noyau, en français) est l'une des parties les plus fondamentales d'un système d'exploitation. Il sert d'intermédiaire entre le logiciel applicatif et le matériel informatique. Le noyau a plusieurs responsabilités cruciales, dont voici quelques-unes:
+
+- Gestion de la mémoire : Le noyau est responsable de la gestion de la mémoire RAM, y compris la mémoire pour les processus en cours d'exécution et la gestion de la mémoire virtuelle.
+- Planification des processus : Il décide quel processus doit être exécuté par le processeur, quand et pendant combien de temps.
+- Gestion des périphériques : Il communique directement ou via des pilotes de périphériques avec le matériel externe comme les disques durs, les claviers, les imprimantes, etc.
+- Gestion des systèmes de fichiers : Le noyau permet aux programmes et aux utilisateurs d'accéder aux fichiers sur les disques de stockage.
+- Gestion des entrées/sorties (I/O) : Il facilite la communication entre les logiciels internes et les périphériques externes.
+- Mise en réseau : Le noyau gère les communications réseau et les protocoles associés.
+- Sécurité et Accès : Il assure que les ressources non autorisées ne sont pas accessibles et isole les processus pour éviter les interférences.
+
+
+Dans le contexte de ce projet que nous avons examiné, le terme "kernel" est utilisé car le code est conçu pour interagir directement avec le matériel sous-jacent, sans dépendre d'un autre système d'exploitation ou noyau. Lorsqu'un code a cette capacité et cette responsabilité, il est généralement considéré comme un noyau.
+
+### Différence entre un noyau et un système d'exploitation complet
+Bien que le noyau soit une partie essentielle d'un système d'exploitation, il ne constitue pas à lui seul un système d'exploitation complet. Un système d'exploitation complet comprend généralement des utilitaires, des programmes d'application, des interfaces utilisateur (comme des GUI) et d'autres fonctionnalités qui rendent le système utilisable pour les tâches quotidiennes. Le noyau, en revanche, est le cœur qui rend toutes ces fonctionnalités possibles en interagissant directement avec le matériel.
+
+En résumé, le projet est un noyau de base, pour comprendre comment ces fonctions essentielles sont gérées au niveau le plus bas d'un système d'exploitation dans un but éducatif.
