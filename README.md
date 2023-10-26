@@ -74,7 +74,7 @@ Un "kernel" (ou noyau, en français) est l'une des parties les plus fondamentale
 - Sécurité et Accès : Il assure que les ressources non autorisées ne sont pas accessibles et isole les processus pour éviter les interférences.
 
 
-Dans le contexte de ce projet que nous avons examiné, le terme "kernel" est utilisé car le code est conçu pour interagir directement avec le matériel sous-jacent, sans dépendre d'un autre système d'exploitation ou noyau. Lorsqu'un code a cette capacité et cette responsabilité, il est généralement considéré comme un noyau.
+Dans le contexte de ce projet, le terme "kernel" est utilisé car le code est conçu pour interagir directement avec le matériel sous-jacent, sans dépendre d'un autre système d'exploitation ou noyau. Lorsqu'un code a cette capacité et cette responsabilité, il est généralement considéré comme un noyau.
 
 ### Différence entre un noyau et un système d'exploitation complet
 Bien que le noyau soit une partie essentielle d'un système d'exploitation, il ne constitue pas à lui seul un système d'exploitation complet. Un système d'exploitation complet comprend généralement des utilitaires, des programmes d'application, des interfaces utilisateur (comme des GUI) et d'autres fonctionnalités qui rendent le système utilisable pour les tâches quotidiennes. Le noyau, en revanche, est le cœur qui rend toutes ces fonctionnalités possibles en interagissant directement avec le matériel.
