@@ -47,6 +47,26 @@ Pour exécuter le noyau, utilisez QEMU, un émulateur de machine. Voici la comma
 C:\\"Program Files"\\qemu\\qemu-system-x86_64.exe -cdrom dist/x86_64/kernel.iso
 ```
 
+## Détails
+
+### Analyse des Répertoires
+
+
+Répertoire `src`
+
+
+Le répertoire `src` contient deux sous-répertoires :
+
+- `impl` : Implémentation du noyau.
+- `intf` : Interfaces ou définitions d'API.
+
+
+Répertoire `targets`
+
+
+Le répertoire targets contient un seul sous-répertoire :
+- `x86_64` : Le noyau est destiné à la plateforme x86_64, d'où l'utilisation de QEMU pour l'émulation de cette architecture.
+
 ## Structure du Projet
 `src/impl`: Contient l'implémentation du noyau, y compris les détails spécifiques à l'architecture x86_64.
 `src/intf`: Définit les interfaces, comme print.h pour l'affichage ou la journalisation.
